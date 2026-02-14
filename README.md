@@ -40,31 +40,31 @@ Joblib (.pkl format)
 
 Steps Performed:
 
-Handling missing values
+1.Handling missing values
 
-Encoding categorical features
+2.Encoding categorical features
 
-Training the model
+3.Training the model
 
-Saving the trained model
+4.Saving the trained model
 
-Building a Streamlit interface for live predictions
+5.Building a Streamlit interface for live predictions
 
 ────────────────────────────
 
 Technologies Used
 
-Python
+1.Python
 
-Pandas
+2.Pandas
 
-NumPy
+3.NumPy
 
-Scikit-learn
+4.Scikit-learn
 
-Joblib
+5.Joblib
 
-Streamlit
+6.Streamlit
 
 ────────────────────────────
 
