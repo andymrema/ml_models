@@ -1,127 +1,126 @@
-Water Pump Functionality Prediction
+#  Tanzania Water Pump Functionality Prediction
 
-Project Overview
+> *Can data science save lives? I think so.*
 
-This project builds a Machine Learning model to predict the functionality status of water pumps. The model classifies pumps into categories such as functional or non-functional based on operational and environmental features.
+A machine learning project that predicts whether water pumps across Tanzania are **functional or non-functional** — built by a year 2 data science student, using real data, solving a real problem.
 
-The solution includes:
+---
 
-1.Data preprocessing and encoding
+## 🌍 Why This Project?
 
-2.Model training using a Decision Tree Classifier
+Millions of Tanzanians depend on water pumps for clean water every day. When a pump fails and no one knows until it's too late, entire communities suffer.
 
-3.Model serialization using Joblib
+I wanted to use data science to answer one question:
 
-4.Deployment using Streamlit
+**Can we predict which pumps will fail — before they do?**
 
-────────────────────────────
+This project is my attempt to answer that. It's not just a school assignment. It's about my country, my people, and what data can do when it's pointed at something that matters.
 
-Problem Statement
+---
 
-Access to clean water is highly dependent on properly functioning water pumps. Predicting pump status helps identify areas that require maintenance and resource allocation.
+## 🤖 What the Model Does
 
-This project uses supervised machine learning techniques to predict pump functionality using structured tabular data.
+The model takes in features about a water pump — its age, installer, water quality, location, and more — and predicts one of two outcomes:
 
-────────────────────────────
+| Prediction | Meaning |
+|---|---|
+| ✅ Functional | The pump is working fine |
+| ❌ Non-Functional | The pump has failed or needs repair |
 
-Machine Learning Approach
+---
 
-Algorithm Used:
-Decision Tree Classifier
+## 🧠 Machine Learning Approach
 
-Encoding Method:
-Label Encoding for categorical variables
+| Component | Details |
+|---|---|
+| Algorithm | Decision Tree Classifier |
+| Encoding | Label Encoding for categorical variables |
+| Model Persistence | Joblib (.pkl format) |
+| Deployment | Streamlit Community Cloud |
 
-Target Encoding:
-LabelEncoder
+### Steps performed:
+1. Data exploration and understanding
+2. Handling missing values
+3. Encoding categorical features
+4. Training the Decision Tree model
+5. Saving the trained model with Joblib
+6. Building an interactive Streamlit app for live predictions
 
-Model Persistence:
-Joblib (.pkl format)
+---
 
-Steps Performed:
+## 🛠️ Technologies Used
 
-1.Handling missing values
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-lightblue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
 
-2.Encoding categorical features
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- Joblib
+- Streamlit
 
-3.Training the model
+---
 
-4.Saving the trained model
+## 📂 Project Structure
 
-5.Building a Streamlit interface for live predictions
+```
+tanzania-water-pump-prediction/
+│
+├── app.py                  # Streamlit web application
+├── models/
+│   ├── pump_model.pkl      # Trained Decision Tree model
+│   ├── encoders_X.pkl      # Feature encoders
+│   ├── feature_columns.pkl # Feature column order
+│   └── le_Y.pkl            # Target label encoder
+├── requirements.txt        # Dependencies
+└── README.md
+```
 
-────────────────────────────
+---
 
-Technologies Used
+## 🚀 Run It Locally
 
-1.Python
+```bash
+# Step 1: Clone the repo
+git clone https://github.com/andymrema/tanzania-water-pump-prediction.git
 
-2.Pandas
-
-3.NumPy
-
-4.Scikit-learn
-
-5.Joblib
-
-6.Streamlit
-
-────────────────────────────
-
-Project Structure
-
-app.py
-models/
-pump_model.pkl
-encoders_X.pkl
-feature_columns.pkl
-le_Y.pkl
-requirements.txt
-README.md
-
-────────────────────────────
-
-How to Run Locally
-
-Step 1: Install dependencies
+# Step 2: Install dependencies
 pip install -r requirements.txt
 
-Step 2: Run the Streamlit application
+# Step 3: Run the app
 streamlit run app.py
+```
 
-────────────────────────────
+---
 
-Live Application
+## 🌐 Live Demo
 
-Streamlit App URL:
-https://mlproject-jabjhfbfb2zfckuvuk5zkd.streamlit.app/
+👉 **[Try the live app here](https://mlproject-jabjhfbfb2zfckuvuk5zkd.streamlit.app/)**
 
-────────────────────────────
+Enter pump details and get an instant prediction on whether it's functional or not.
 
-Features of the Application;
+---
 
-1.Interactive sidebar inputs
+## 📈 What I Learned
 
-2.Automatic categorical encoding
+- How to work with real-world, messy data
+- The importance of encoding categorical variables correctly
+- How to deploy a machine learning model as a web app
+- That data science is most powerful when it solves real problems
 
-3.Real-time prediction
+---
 
-4.Clean and user-friendly interface
+## 🙋‍♂️ About Me
 
-5.Deployed on Streamlit Community Cloud
+Hi, I'm **Andy Mrema** Data Science student from Tanzania, building real-world projects and sharing everything I learn.
 
-────────────────────────────
+I believe data science shouldn't be locked behind complexity. I'm on a mission to make it accessible to beginners while using it to solve African problems.
 
-Model Output
+📸 Follow my journey on Instagram: [@andywithdata](https://www.instagram.com/andywithdata)
+💻 More projects: [github.com/andymrema](https://github.com/andymrema)
 
-The model predicts:
+---
 
-Functional
-
-Non-Functional
-
-────────────────────────────
-
-Author
-
-– Andrew Mrema
+*If this project inspired you or helped you learn something — leave a ⭐ on the repo. It means a lot!*
