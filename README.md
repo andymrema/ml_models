@@ -94,8 +94,7 @@ streamlit run app.py
 Live Application
 
 Streamlit App URL:
-https://mlprojectgrp21work-hfju8tqcmxfvsgtupc8fwt.streamlit.app/
-
+https://mlproject-jabjhfbfb2zfckuvuk5zkd.streamlit.app/
 
 ────────────────────────────
 
@@ -125,4 +124,4 @@ Non-Functional
 
 Author
 
-Group Project – Machine Learning Assignment
+– Andrew Mrema
